@@ -4,6 +4,10 @@ import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 
+
+import { AuthService } from './auth/auth.service';
+import { AuthController } from './auth/auth.controller';
+
 @Module({
   imports: [ ConfigModule.forRoot({
     isGlobal: true,
@@ -12,7 +16,7 @@ import { MongooseModule } from '@nestjs/mongoose';
   MongooseModule.forRoot(process.env.DB_CONNECT, {
   }),
 ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [AppController, AuthController],
+  providers: [AppService, AuthService],
 })
 export class AppModule {}
