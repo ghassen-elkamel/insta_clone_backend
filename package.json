@@ -28,10 +28,16 @@
     "@nestjs/passport": "^9.0.3",
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/swagger": "^6.3.0",
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
     "class-validator": "^0.14.0",
+<<<<<<< Updated upstream
     "mongoose": "^7.0.3",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
+=======
+    "mongoose": "^7.3.1",
+>>>>>>> Stashed changes
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0"
   },
